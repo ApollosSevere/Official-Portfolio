@@ -1,16 +1,11 @@
 import React from "react";
 
-// import Navbar from "./components/Navbar";
-// import Routes from "./Routes";
-
-import HomePage from "./components/Home/HomePage.jsx";
+import Landing from "./components/Landing/Landing.jsx";
 
 const App = () => {
   return (
     <div>
-      {/* <Navbar />
-      <Routes /> */}
-      <HomePage />
+      <Landing />
     </div>
   );
 };
