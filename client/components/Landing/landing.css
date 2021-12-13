@@ -1,0 +1,58 @@
+.landing {
+  display: flex;
+  height: 100vh;
+}
+
+.landing-left {
+  flex: 1;
+}
+
+.landing-right {
+  flex: 1;
+}
+
+.landing-left-wrapper {
+  padding: 50px;
+}
+
+.l-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.l-name {
+  font-size: 60px;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.l-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.l-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #59b256;
+  display: flex;
+  align-items: center;
+}
+
+.l-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  33% {
+    transform: translateY(-50px);
+  }
+  66% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
