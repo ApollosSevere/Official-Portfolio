@@ -19,9 +19,18 @@ function Landing() {
               <div className="l-title-item">Backend Engineer</div>
             </div>
           </div>
+
+          <p className="l-desc">
+            I specialize in software engineering, database management, complex
+            algorithms, and back-end development. I have a passion for fluently
+            integrating technology and business
+          </p>
         </div>
       </div>
-      <div className="landing-right">right</div>
+
+      <div className="landing-right">
+        <img src="/assets/img/utils/me.png" alt="" className="l-img" />
+      </div>
     </div>
   );
 }

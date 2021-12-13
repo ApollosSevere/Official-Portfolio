@@ -5,6 +5,9 @@
 
 .landing-left {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-right {
@@ -13,6 +16,10 @@
 
 .landing-left-wrapper {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: red; */
 }
 
 .l-intro {
@@ -27,6 +34,7 @@
 }
 
 .l-title {
+  margin-top: 20px;
   height: 50px;
   overflow: hidden;
 }
@@ -45,6 +53,10 @@
   animation: move 10s ease-in-out infinite alternate;
 }
 
+.l-desc {
+  margin-top: 20px;
+}
+
 @keyframes move {
   33% {
     transform: translateY(-50px);
@@ -55,4 +67,10 @@
   100% {
     transform: translateY(-150px);
   }
+}
+
+.l-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
