@@ -45,7 +45,7 @@
 }
 
 .about-card {
-  max-width: 550px;
+  /* max-width: 550px; */
   height: 70vh;
   /* border-radius: 2%; */
   /* position: absolute; */
@@ -58,7 +58,7 @@
 
 .about-card-wrapper {
   /* background-color: aqua; */
-  width: 80%;
+  width: 90%;
   height: 70vh;
   position: relative;
   display: flex;
