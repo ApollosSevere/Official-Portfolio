@@ -29,6 +29,7 @@ function Landing() {
       </div>
 
       <div className="landing-right">
+        <div className="l-bg"></div>
         <img src="/assets/img/utils/me.png" alt="" className="l-img" />
       </div>
     </div>
