@@ -87,12 +87,12 @@
   position: absolute;
   content: "";
   left: 17%;
-  top: 9%;
+  top: 3%;
   /* border: 10px solid rgba(255, 255, 255, 0.6); */
   border: 7px solid #333;
   /* background-color: aqua; */
   width: 79%;
-  height: 80%;
+  height: 85%;
 }
 
 .a-award-imgContainer {
@@ -174,5 +174,9 @@
 
   .about-card-wrapper::before {
     display: none;
+  }
+
+  .about-img {
+    background-position-x: 80%;
   }
 }

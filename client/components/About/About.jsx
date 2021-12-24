@@ -20,7 +20,7 @@ function About() {
             <div className="about-card-wrapper">
               <img
                 className="about-img"
-                src="/assets/img/utils/stand.jpg"
+                src="/assets/img/utils/stand.jpeg"
                 alt=""
               />
             </div>
