@@ -1,6 +1,6 @@
-import "./toggle.css";
 import React from "react";
 import { useContext } from "react";
+import "./toggle.css";
 
 import { ThemeContext } from "../../context.js";
 
