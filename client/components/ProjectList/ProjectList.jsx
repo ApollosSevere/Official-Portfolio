@@ -20,8 +20,6 @@ function ProjectList() {
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </div>
     </div>
   );

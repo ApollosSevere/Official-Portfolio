@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 //CSS
 import "./landing.css";
 
 function Landing() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="landing">
       <div className="landing-left">
@@ -13,10 +17,30 @@ function Landing() {
 
           <div className="l-title">
             <div className="l-title-wrapper">
-              <div className="l-title-item">Web Developer</div>
-              <div className="l-title-item">Content Creator</div>
-              <div className="l-title-item">UI/UX Designer</div>
-              <div className="l-title-item">Backend Engineer</div>
+              <div
+                style={{ color: darkMode ? "#59b256" : "bisque" }}
+                className="l-title-item"
+              >
+                Web Developer
+              </div>
+              <div
+                style={{ color: darkMode ? "#59b256" : "bisque" }}
+                className="l-title-item"
+              >
+                Content Creator
+              </div>
+              <div
+                style={{ color: darkMode ? "#59b256" : "bisque" }}
+                className="l-title-item"
+              >
+                UI/UX Designer
+              </div>
+              <div
+                style={{ color: darkMode ? "#59b256" : "bisque" }}
+                className="l-title-item"
+              >
+                Backend Engineer
+              </div>
             </div>
           </div>
 
@@ -29,7 +53,10 @@ function Landing() {
       </div>
 
       <div className="landing-right">
-        <div className="l-bg"></div>
+        <div
+          style={{ backgroundColor: darkMode ? "#333" : "bisque" }}
+          className="l-bg"
+        ></div>
         <img src="/assets/img/utils/me.png" alt="" className="l-img" />
       </div>
     </div>

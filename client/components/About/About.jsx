@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./about.css";
+import { ThemeContext } from "../../context";
 
 function About() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="about">
-      <div className="about-left">
+      <div
+        style={{ backgroundColor: darkMode ? "#333" : "" }}
+        className="about-left"
+      >
         <div className="about-left-wrapper">
-          <div className="about-card">
+          <div
+            style={{ backgroundColor: darkMode ? "#555" : "" }}
+            className="about-card"
+          >
             <div className="about-card-wrapper">
               <img
                 className="about-img"

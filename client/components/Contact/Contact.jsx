@@ -34,7 +34,10 @@ function Contact() {
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
+      <div
+        style={{ backgroundColor: darkMode ? "#555" : "bisque" }}
+        className="c-bg"
+      ></div>
 
       <div className="c-wrapper">
         <div className="c-left">

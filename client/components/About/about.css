@@ -142,3 +142,37 @@
   color: #555;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  .about-left {
+    width: 95%;
+    clip-path: none;
+    background-color: white;
+  }
+
+  .about-card {
+    height: 30vh;
+    background-color: #999;
+    border-radius: 5%;
+  }
+
+  .a-card.bg,
+  .a-award {
+    display: none;
+  }
+
+  .about-right {
+    padding: 20px;
+  }
+
+  .about-card-wrapper::before {
+    display: none;
+  }
+}
