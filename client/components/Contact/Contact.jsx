@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useRef, useState, useContext } from "react";
 import "./contact.css";
+import emailjs from "emailjs-com";
+import { ThemeContext } from "../../context";
 
 function Contact() {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(formRef.current);
+
+    emailjs
+      .sendForm(
+        "service_owsdcbd",
+        "template_7h6o4vl",
+        formRef.current,
+        "user_zkQkPAhiYHswcGCxAFZbM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -41,6 +71,39 @@ function Contact() {
             <b>What’s your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
           </p>
+
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="from_name"
+              required
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+              required
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+              required
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="5"
+              placeholder="Message"
+              name="message"
+              required
+            />
+            {done && "Thank you..."}
+            <button>Submit</button>
+          </form>
         </div>
       </div>
     </div>

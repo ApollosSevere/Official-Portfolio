@@ -5,12 +5,15 @@ import { Router } from "react-router-dom";
 import history from "./history";
 import store from "./store";
 import App from "./App";
+import { ThemeProvider } from "./context";
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={history}>
-      <App />
-    </Router>
+    <ThemeProvider>
+      <Router history={history}>
+        <App />
+      </Router>
+    </ThemeProvider>
   </Provider>,
   document.getElementById("app")
 );
