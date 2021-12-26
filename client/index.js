@@ -7,6 +7,8 @@ import store from "./store";
 import App from "./App";
 import { ThemeProvider } from "./context";
 
+import "./style.css";
+
 ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider>

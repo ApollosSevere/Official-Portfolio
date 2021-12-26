@@ -16,10 +16,10 @@ function ProjectList() {
       </div>
 
       <div className="pl-list">
+        <ProjectCard img={"/assets/img/utils/fresh.jpeg"} />
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {/* <ProjectCard />
+        <ProjectCard /> */}
       </div>
     </div>
   );

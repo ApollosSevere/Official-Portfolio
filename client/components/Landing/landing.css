@@ -94,12 +94,17 @@
     flex-direction: column;
   }
 
+  .landing-left {
+    margin: 0;
+  }
+
   .landing-left-wrapper {
-    padding: 10px;
+    padding: 0;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
+    height: 70%;
+    margin: 0;
   }
 
   .l-desc {

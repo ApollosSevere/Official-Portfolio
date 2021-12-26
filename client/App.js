@@ -1,12 +1,8 @@
 import React, { useContext } from "react";
 
-import ProjectList from "./components/ProjectList/ProjectList.jsx";
-import Landing from "./components/Landing/Landing.jsx";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-
-import Toggle from "./components/toggle/Toggle.jsx";
 import { ThemeContext } from "./context.js";
+import Routes from "./Routes.js";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -19,11 +15,7 @@ const App = () => {
         color: darkMode && "white",
       }}
     >
-      <Toggle />
-      <Landing />
-      <About />
-      <ProjectList />
-      <Contact />
+      <Routes />
     </div>
   );
 };
